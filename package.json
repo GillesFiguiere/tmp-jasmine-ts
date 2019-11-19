@@ -1,0 +1,24 @@
+{
+    "name": "tmp-jasmine-ts",
+    "version": "1.0.0",
+    "description": "",
+    "dependencies": {
+        "@types/node": "latest",
+        "install": "latest",
+        "npm": "latest"
+    },
+    "devDependencies": {
+        "@types/jasmine": "latest",
+        "jasmine": "latest",
+        "nyc": "latest",
+        "ts-node": "latest",
+        "typescript": "latest"
+    },
+    "scripts": {
+        "test": "npx jasmine",
+        "test-watch": "npx jasmine ",
+        "coverage": "nyc -r text -e .ts -x \"**/*[sS]pec.ts\" npm run test"
+    },
+    "author": "Gilles Figuière",
+    "license": "ISC"
+}
